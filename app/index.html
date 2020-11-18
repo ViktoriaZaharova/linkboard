@@ -47,7 +47,7 @@
             <div class="col-4 col-md-6">
                 <button type="button" class="btn btn-primary btn-accent" data-toggle="modal" data-target="#modal1">
                     <span class="btn-text">Добавить ссылку</span>
-                    <span class="btn-icon"><svg class="icon-svg fill-none"><use xlink:href="img/sprite.svg#link"></use></svg></span>
+                    <span class="btn-icon"><img src="img/link-white.svg" alt=""></span>
                 </button>
             </div>
         </div>
@@ -66,11 +66,13 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-accent" data-toggle="modal" data-target="#modal2">
+                        <button type="button" class="btn btn-primary btn-accent" data-toggle="modal"
+                                data-target="#modal2">
                             <span class="btn-text">Зарегистрироваться</span>
                         </button>
 
-                        <button type="button" class="btn btn-primary btn-border" data-toggle="modal" data-target="#modal3">
+                        <button type="button" class="btn btn-primary btn-border" data-toggle="modal"
+                                data-target="#modal3">
                             <span class="btn-overlay">
                                 <span class="btn-text">Войти</span>
                             </span>
@@ -101,12 +103,105 @@
             <div class="col-5 col-md-6 d-none d-md-flex">
                 <button type="button" class="btn btn-primary btn-accent" data-toggle="modal" data-target="#modal1">
                     <span class="btn-text">Добавить ссылку</span>
-                    <span class="btn-icon"><svg class="icon-svg fill-none"><use xlink:href="img/sprite.svg#link"></use></svg></span>
+                    <span class="btn-icon"><img src="img/link-white.svg" alt=""></span>
                 </button>
             </div>
         </div>
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><img src="img/logo.svg" alt=""></span>
+                    <span class="logo-content">
+                        <span class="logo-title">
+                            link<span class="text-grey">board</span>.ru
+                        </span>
+                        <span class="logo-description">закладки в одном месте</span>
+                    </span>
+                </a>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Добавление ссылки</h3>
+                        </div>
+
+                        <div class="col-12">
+                            <form method="post" class="form">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <div class="form-group__icon"><img src="img/link.svg" alt=""></div>
+                                            <label for="input1">Ссылка *</label>
+                                            <input type="email" class="form-control" id="input1"
+                                                   placeholder="Facebook.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <div class="form-group__icon"><img src="img/message.svg" alt=""></div>
+                                            <label for="input2"></label>
+                                            <input type="email" class="form-control" id="input2"
+                                                   placeholder="Название сайта">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <div class="form-group__icon"><img src="img/message.svg" alt=""></div>
+                                            <label for="input3"></label>
+                                            <select class="form-control" id="input3">
+                                                <option>Категория </option>
+                                                <option>Категория </option>
+                                                <option>Категория </option>
+                                                <option>Категория </option>
+                                                <option>Категория </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <div class="form-group__icon"><img src="img/pencil.svg" alt=""></div>
+                                            <label for="input4"></label>
+                                            <select class="form-control" id="input4">
+                                                <option>Теги</option>
+                                                <option>Теги</option>
+                                                <option>Теги</option>
+                                                <option>Теги</option>
+                                                <option>Теги</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 offset-md-6">
+                                        <button type="submit" class="btn btn-primary btn-accent">
+                                            <span class="btn-text">Добавить ссылку</span>
+                                            <span class="btn-icon"><img src="img/link-white.svg" alt=""></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="modal-footer">-->
+            <!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+            <!--                <button type="button" class="btn btn-primary">Understood</button>-->
+            <!--            </div>-->
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

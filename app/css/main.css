@@ -284,6 +284,184 @@ header, footer {
   .btn-group .btn-border {
     max-width: 166px; }
 
+form button {
+  width: 100%;
+  max-width: 284px;
+  margin: 10px 0 0 auto; }
+
+.modal-header {
+  background: #F8F8F8;
+  padding: 25px 20px;
+  border: none; }
+  .modal-header .close {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    width: 17px;
+    height: 17px;
+    display: none; }
+  .modal-header .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto; }
+  .modal-header .logo-title {
+    font-size: 34px; }
+  .modal-header .logo-description {
+    display: none; }
+
+.modal-content {
+  border: none;
+    border-radius: 0; }
+  .modal-content h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0 auto 40px; }
+
+.modal-dialog {
+  max-width: 800px; }
+
+.modal-body {
+  padding: 34px 20px 60px; }
+
+.form-group {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 0 0 20px;
+  border: 1px solid #4F4F4F;
+    border-radius: 3px;
+  padding: 0 23px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4F4F4F; }
+  .form-group input {
+    border: none;
+      border-radius: 0;
+    padding: 0;
+    height: 19px;
+    color: #4F4F4F;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: "Roboto", sans-serif; }
+    .form-group input::-webkit-input-placeholder {
+      color: #4F4F4F; }
+    .form-group input::-moz-placeholder {
+      color: #4F4F4F; }
+    .form-group input::-ms-input-placeholder {
+      color: #4F4F4F; }
+    .form-group input::placeholder {
+      color: #4F4F4F; }
+    .form-group input:hover, .form-group input:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    outline: none;
+    padding: 0 14px 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #4F4F4F;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    background: url("../img/arrow-bottom.svg") no-repeat right center;
+      background-size: 14px;
+    border: none;
+      border-radius: 0; }
+    .form-group select:hover, .form-group select:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 2px; }
+
+input {
+  border: none;
+    border-radius: 0;
+  padding: 0;
+  height: 19px;
+  color: #4F4F4F;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Roboto", sans-serif; }
+  input::-webkit-input-placeholder {
+    color: #4F4F4F; }
+  input::-moz-placeholder {
+    color: #4F4F4F; }
+  input::-ms-input-placeholder {
+    color: #4F4F4F; }
+  input::placeholder {
+    color: #4F4F4F; }
+  input:hover, input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+  padding: 0 14px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #4F4F4F;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  background: url("../img/arrow-bottom.svg") no-repeat right center;
+    background-size: 14px;
+  border: none;
+    border-radius: 0; }
+  select:hover, select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.form-group__icon {
+  position: absolute;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

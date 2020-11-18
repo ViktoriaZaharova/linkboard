@@ -246,6 +246,147 @@ header, footer
   .btn-border
     max-width: 166px
 
+form
+  button
+    width: 100%
+    max-width: 284px
+    margin: 10px 0 0 auto
+
+//modal
+.modal-header
+  background: #F8F8F8
+  padding: 25px 20px
+  border: none
+  .close
+    padding: 0
+    margin: 0
+    opacity: 1
+    width: 17px
+    height: 17px
+    display: none
+  .logo
+    justify-content: center
+    margin: 0 auto
+  .logo-title
+    font-size: 34px
+  .logo-description
+    display: none
+
+.modal-content
+  border: none
+    radius: 0
+  h3
+    text-align: center
+    width: 100%
+    font-size: 24px
+    font-weight: 500
+    color: #333333
+    margin: 0 auto 40px
+
+.modal-dialog
+  max-width: 800px
+
+.modal-body
+  padding: 34px 20px 60px
+
+.form-group
+  position: relative
+  width: 100%
+  height: 60px
+  margin: 0 0 20px
+  border: 1px solid #4F4F4F
+    radius: 3px
+  padding: 0 23px 0 50px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  color: #4F4F4F
+  input
+    border: none
+      radius: 0
+    padding: 0
+    height: 19px
+    color: #4F4F4F
+    font-size: 16px
+    font-weight: 300
+    outline: none
+    box-shadow: none
+    font-family: $default-font
+    &::placeholder
+      color: #4F4F4F
+    &:hover, &:focus
+      outline: none
+      box-shadow: none
+  select
+    -webkit-appearance: none
+    appearance: none
+    outline: none
+    padding: 0 14px 0 0
+    box-sizing: border-box
+    color: #4F4F4F
+    font-size: 16px
+    font-weight: 300
+    font-family: $default-font
+    background: url("../img/arrow-bottom.svg") no-repeat right center
+      size: 14px
+    border: none
+      radius: 0
+    &:hover, &:focus
+      outline: none
+      box-shadow: none
+
+label
+  display: block
+  font-size: 12px
+  font-weight: 500
+  margin: 0 0 2px
+
+input
+  border: none
+    radius: 0
+  padding: 0
+  height: 19px
+  color: #4F4F4F
+  font-size: 16px
+  font-weight: 300
+  outline: none
+  box-shadow: none
+  font-family: $default-font
+  &::placeholder
+    color: #4F4F4F
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+select
+  -webkit-appearance: none
+  appearance: none
+  outline: none
+  padding: 0 14px 0 0
+  box-sizing: border-box
+  color: #4F4F4F
+  font-size: 16px
+  font-weight: 300
+  font-family: $default-font
+  background: url("../img/arrow-bottom.svg") no-repeat right center
+    size: 14px
+  border: none
+    radius: 0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.form-group__icon
+  position: absolute
+  width: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100%
+  left: 0
+  top: 0
+
 
 @import "media"
 // Всегда в конце
