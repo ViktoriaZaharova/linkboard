@@ -1,0 +1,91 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .btn-group .btn-accent
+    max-width: 220px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .btn-group .btn-border
+    max-width: 120px
+
+  .btn-group .btn-accent
+    max-width: 177px
+
+  .btn
+    font-size: 14px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .main-content
+    max-width: none
+    margin: 0 auto 30px
+
+  .main
+    padding: 41px 0 33px
+    .btn-group
+      margin: 35px 0 0
+    .box-text
+      font-size: 16px
+    h1
+      max-width: 288px
+
+  .btn-group
+    justify-content: flex-start
+    .btn
+      margin: 0 23px 0 0
+      &:last-child
+        margin: 0
+
+  h1
+    font-size: 24px
+    margin: 0 0 12px
+
+  header
+    background: #F8F8F8
+    padding: 30px 0
+
+  header .btn, footer .btn
+    max-width: 79px
+    height: 40px
+    filter: drop-shadow(5px 5px 10px rgba(23, 32, 43, 0.25))
+    &:before
+      content: '+'
+      display: inline-block
+      font-size: 16px
+      font-weight: 500
+    .btn-text
+      display: none
+
+  .logo-icon
+    width: 30px
+    height: 30px
+    min-width: 30px
+    margin: 0 9px 0 0
+
+  .logo-description
+    font-size: 10px
+
+  .logo-title
+    font-size: 18px
+
+  footer
+    background: #F8F8F8
+    padding: 11px 0
+    .logo
+      margin: 0 auto
+      justify-content: center
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
