@@ -1,3 +1,5 @@
-$(document).ready(function() {
-    console.log( "ready!" );
+$('.select').select2({
+    width: 'style',
+    searchInputPlaceholder: 'Добавить категорию...',
+    dropdownParent: $('.modal')
 });

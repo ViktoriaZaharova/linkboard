@@ -387,6 +387,107 @@ select
   left: 0
   top: 0
 
+.select2-container .select2-selection--single .select2-selection__rendered
+  padding: 0
+  border: none
+    radius: 0
+  height: auto
+  width: 100%
+  &:hover, &:focus
+    border: none
+    outline: none
+    box-shadow: none
+
+.select2-container
+  width: 100%
+  //display: flex
+  //align-items: center
+  //justify-content: space-between
+
+.select2-container--default .select2-selection--single
+  border: none
+    radius: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &:hover, &:focus
+    border: none
+    outline: none
+    box-shadow: none
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  line-height: normal
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  position: relative
+  background: url("../img/arrow-bottom.svg") no-repeat right center
+    size: 14px
+  width: 14px
+  height: 8px
+  top: 0
+  right: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  b
+    display: none
+
+.select2-container--default .select2-search--dropdown .select2-search__field
+  border: 1px solid #BDBDBD
+    radius: 3px
+  padding: 0 20px
+  font-style: italic
+  background: #FFFFFF
+  color: #828282
+  font-family: $default-font
+  font-size: 16px
+  height: 50px
+  font-weight: normal
+  &::placeholder
+    color: #828282
+
+.select2-search--dropdown
+  padding: 20px 20px 30px
+
+.select2-dropdown, .select2-container--open .select2-dropdown--below, .select2-container--open .select2-dropdown--above
+  background: #F8F8F8
+  border: 1px solid #E0E0E0
+    radius: 3px
+
+.select2-container--default .select2-results>.select2-results__options
+  font-size: 16px
+  color: #828282
+  transition: .3s ease
+  &::-webkit-scrollbar
+    width: 2px
+    height: 2px
+  &::-webkit-scrollbar-track
+    background-color: #828282
+  &::-webkit-scrollbar-track-piece
+    background-color: #BDBDBD
+  &::-webkit-scrollbar-thumb
+    background-color: #828282
+  &::-webkit-scrollbar-corner
+    background-color: #BDBDBD
+  &::-webkit-resizer
+    background-color: #828282
+
+.select2-results
+  padding: 0 37px 25px 19px
+
+.select2-results__option
+  padding: 5px 10px
+
+.select2-container--default .select2-results__option[aria-selected=true]
+  background: transparent
+  color: #828282
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+  background: linear-gradient(90deg, #F093FB 0%, #F5576C 100%)
+  color: #fff
+
+
 
 @import "media"
 // Всегда в конце
