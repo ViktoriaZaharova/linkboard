@@ -115,6 +115,7 @@ a
 
   &:hover, &:focus
     box-shadow: none
+    border: none
 
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child)
   border-radius: 2px
@@ -246,11 +247,16 @@ header, footer
   .btn-border
     max-width: 166px
 
+.mt-10
+  margin-top: 10px
+
 form
   button
     width: 100%
     max-width: 284px
-    margin: 10px 0 0 auto
+    margin: 0 0 0 auto
+
+
 
 //modal
 .modal-header
@@ -287,7 +293,7 @@ form
   max-width: 800px
 
 .modal-body
-  padding: 34px 20px 60px
+  padding: 34px 0 60px
 
 .form-group
   position: relative
@@ -296,7 +302,7 @@ form
   margin: 0 0 20px
   border: 1px solid #4F4F4F
     radius: 3px
-  padding: 0 23px 0 50px
+  padding: 0 40px 0 50px
   display: flex
   flex-direction: column
   align-items: flex-start
@@ -335,6 +341,14 @@ form
     &:hover, &:focus
       outline: none
       box-shadow: none
+
+.form-group-error
+  border: 1px solid #EB5757
+  color: #EB5757
+  input
+    color: #EB5757
+    &::placeholder
+      color: #EB5757
 
 label
   display: block
@@ -400,9 +414,6 @@ select
 
 .select2-container
   width: 100%
-  //display: flex
-  //align-items: center
-  //justify-content: space-between
 
 .select2-container--default .select2-selection--single
   border: none
@@ -487,7 +498,253 @@ select
   background: linear-gradient(90deg, #F093FB 0%, #F5576C 100%)
   color: #fff
 
+.consent
+  margin: 20px 0 0
+  color: #333333
+  font-size: 12px
 
+.links-accent
+  display: inline-block
+  color: #F5576C
+  text-decoration: underline
+  &:hover
+    text-decoration: none
+    color: #333
+
+.form-group__icon-question
+  position: absolute
+  right: 19px
+  top: 0
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+
+.line-wrapper
+  font-size: 17px
+  font-weight: 500
+  color: #2B2736
+  margin: 30px 0 0
+
+.links-grey
+  text-decoration: underline
+  color: #2B2736
+  display: inline-block
+  &:hover
+    color: #333
+
+.btn-group
+  .btn-come
+    max-width: 166px
+  .btn-check
+    max-width: 177px
+
+.header-box
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.links-exit
+  color: #828282
+  font-size: 18px
+  font-weight: 500
+  display: flex
+  align-items: center
+  &:hover
+    color: #333
+
+.links-exit-icon
+  margin: 0 11px 0 0
+
+.form-search
+  max-width: 460px
+  width: 100%
+  position: relative
+  button
+    background: transparent
+    width: 28px
+    height: 28px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    right: 22px
+    top: 50%
+    transform: translate(0,-50%)
+  label
+    margin: 0
+  input
+    width: 100%
+    padding: 0 50px 0 20px
+    background: #F8F8F8
+    border: 1px solid #828282
+      radius: 3px
+    height: 60px
+    color: #828282
+    font-size: 18px
+    font-weight: normal
+    font-style: italic
+    &::placeholder
+      color: #828282
+
+.header
+  background: #fff
+  
+.main-links
+  background: #F8F8F8
+  padding: 40px 0 260px
+  .form-search
+    max-width: 250px
+    input
+      height: 40px
+      font-size: 14px
+      padding: 0 28px 0 14px
+    button
+      width: 14px
+      height: 14px
+      right: 14px
+  .btn-border
+    height: 60px
+    max-width: 309px
+    width: 100%
+    .btn-overlay
+      background: #F8F8F8
+
+
+.btn-burger
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 40px
+  height: 27px
+
+.nav-tabs-wrapper
+  display: flex
+  align-items: center
+
+.nav-tabs
+  border: none
+    bottom: 2px solid #BDBDBD
+  .nav-link
+    padding: 0 10px 4px
+    color: #BDBDBD
+    font-size: 16px
+    font-weight: 500
+    border-radius: 0
+    position: relative
+    border: none
+    margin: 0
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+  background: transparent
+  border-color: transparent
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -2px
+    width: 100%
+    height: 2px
+    background: linear-gradient(90deg, #F093FB 0%, #F5576C 100%)
+
+  .text-gradient
+    background: -webkit-linear-gradient(90deg, #F093FB 0%, #F5576C 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.tab-content
+  margin: 30px 0 0
+
+.card
+  background: #F2F2F2
+  border: none
+    radius: 3px
+  transition: .3s ease
+  position: relative
+  &:hover
+    filter: drop-shadow(5px 5px 10px rgba(23, 32, 43, 0.25))
+    .card-hover
+      display: flex
+  h3
+    color: #333333
+    font-size: 14px
+    font-weight: 500
+    margin: 0 0 5px
+  .text
+    color: #4F4F4F
+    font-size: 12px
+    line-height: 150%
+
+.card-hover
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  border-radius: 3px 3px 0 0
+  background: rgba(43, 39, 54, 0.5)
+  display: none
+  align-items: center
+  justify-content: center
+  padding: 10px 0
+  a
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+
+.card-img
+  width: 100%
+  border-radius: 3px 3px 0 0
+  background: #2F80ED
+  height: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.card-body
+  padding: 15px 5px 11px 9px
+
+.tags
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.tag
+  color: #9B51E0
+  font-size: 12px
+  margin: 5px 0 5px 2px
+  &:first-child
+    margin-left: 0
+  &:hover
+    color: #333
+
+.links-blue
+  display: flex
+  align-items: center
+  color: #2F80ED
+  font-size: 12px
+  &:hover
+    color: #333
+
+.links-icon
+  margin: 0 5px 0 0
+
+.modal-confirm
+  .modal-dialog
+    max-width: 440px
+  .modal-body
+    padding: 31px 10px 50px
+  .btn
+    height: 60px
+    max-width: none
+    width: 100%
+    margin: 2px auto 0
+
+.mb-20
+  margin-bottom: 20px
 
 @import "media"
 // Всегда в конце
