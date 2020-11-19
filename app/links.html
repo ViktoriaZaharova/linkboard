@@ -29,6 +29,58 @@
 
 <body>
 
+<div class="mobile-menu">
+    <div class="mobile-menu__header">
+        <a href="#" class="links-exit btn-close">
+            <span class="links-exit-icon"><img src="img/exit.svg" alt=""></span>
+            <span class="links-exit-text">Выйти</span>
+        </a>
+    </div>
+    <div class="mobile-menu__body">
+        <ul class="list-category">
+            <li>
+                <a href="#">
+                    <p>Все категории</p><span>(20)</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Социальные сети</p><span>(5)</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Категория 00</p><span>(5)</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Категория 01</p><span>(5)</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Категория 02</p><span>(5)</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Категория 03</p><span>(5)</span>
+                </a>
+            </li>
+        </ul>
+
+        <button type="button"
+                class="btn btn-primary btn-border btn-add" data-toggle="modal"
+                data-target="#modal1">
+                                                <span class="btn-overlay"><span
+                                                        class="btn-text">Добавить категорию</span>
+                                                <span class="btn-icon"><img src="img/link-gradient.svg" alt=""></span>
+                                                </span>
+        </button>
+    </div>
+</div>
+
 <header class="header">
     <div class="container">
         <div class="row">
@@ -73,15 +125,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex d-lg-none">
-                <form method="post" class="form-search">
-                    <label for="search1"><input type="text" name="search" placeholder="Поиск по закладкам"
-                                                id="search1"></label>
-                    <button type="submit"><img src="img/search.svg" alt=""></button>
-                </form>
+                <div class="main-links__box">
+                    <form method="post" class="form-search">
+                        <label for="search1"><input type="text" name="search" placeholder="Поиск по закладкам"
+                                                    id="search1"></label>
+                        <button type="submit"><img src="img/search.svg" alt=""></button>
+                    </form>
 
-                <a href="#" class="btn-burger">
-                    <img src="img/burger.svg" alt="">
-                </a>
+                    <a href="#" class="btn-burger">
+                        <img src="img/burger.svg" alt="">
+                    </a>
+                </div>
             </div>
 
             <div class="col-6 d-none d-lg-flex">
@@ -97,9 +151,9 @@
                 </nav>
             </div>
             <div class="col-6 d-none d-lg-flex justify-content-end">
-                <button type="button" data-dismiss="modal"
+                <button type="button"
                         class="btn btn-primary btn-border btn-add" data-toggle="modal"
-                        data-target="#modal2">
+                        data-target="#modal1">
                                                 <span class="btn-overlay"><span
                                                         class="btn-text">Добавить категорию</span>
                                                 <span class="btn-icon"><img src="img/link-gradient.svg" alt=""></span>
@@ -111,7 +165,7 @@
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20">
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20 col-card">
                                 <div class="card">
                                     <div class="card-hover">
                                         <a href="#" class="btn-card"><img src="img/message-white.svg" alt=""></a>
@@ -142,7 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20">
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20 col-card">
                                 <div class="card">
                                     <div class="card-hover">
                                         <a href="#" class="btn-card"><img src="img/message-white.svg" alt=""></a>
@@ -173,7 +227,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20">
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20 col-card">
                                 <div class="card">
                                     <div class="card-hover">
                                         <a href="#" class="btn-card"><img src="img/message-white.svg" alt=""></a>
@@ -204,7 +258,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20">
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20 col-card">
                                 <div class="card">
                                     <div class="card-hover">
                                         <a href="#" class="btn-card"><img src="img/message-white.svg" alt=""></a>
@@ -235,7 +289,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20">
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20 col-card">
                                 <div class="card">
                                     <div class="card-hover">
                                         <a href="#" class="btn-card"><img src="img/message-white.svg" alt=""></a>
@@ -266,7 +320,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20">
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-20 col-card">
                                 <div class="card">
                                     <div class="card-hover">
                                         <a href="#" class="btn-card"><img src="img/message-white.svg" alt=""></a>
