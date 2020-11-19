@@ -1,8 +1,11 @@
 $('.select').select2({
     width: 'style',
     searchInputPlaceholder: 'Добавить категорию...',
-    dropdownParent: $('.modal')
+    // dropdownParent: $('.modal')
 });
+
+
+$.fn.modal.Constructor.prototype.enforceFocus = function() {};
 
 $('.btn-burger').click(function () {
     $('.mobile-menu').fadeToggle();
